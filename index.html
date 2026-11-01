@@ -225,6 +225,9 @@ h1.name{
 
 .col3{display:flex;flex-direction:column;min-height:0}
 .col3 .ph{flex:1;min-height:0}
+.campus-photo{padding:0;border-style:solid;border-color:rgba(255,255,255,.12)}
+.campus-photo::after{display:none}
+.campus-cap{margin-top:8px;text-align:right;font-family:"Bahnschrift","Microsoft YaHei",monospace;font-size:12px;letter-spacing:2.4px;color:#A9B8C7}
 .honor-band{display:flex;align-items:center;gap:22px;margin-top:16px;padding:13px 20px;border:1px solid rgba(255,176,32,.2);border-radius:12px;
   background:linear-gradient(90deg,rgba(255,176,32,.09),rgba(255,176,32,.012) 72%)}
 .hb-label{flex:none;padding-right:20px;border-right:1px solid rgba(255,176,32,.2);
@@ -469,14 +472,11 @@ h1.name{
         </div>
 
         <div class="col3">
-          <!-- 图片位 B -->
-          <figure class="ph reveal" style="--d:.22s" data-slot="B">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.6" cy="9.6" r="1.6"/><path d="M4 17l5-5 4 4 3-3 4 4"/>
-            </svg>
-            <div class="ph-label">图片位 B</div>
-            <div class="ph-note">校园 / 实验室 / 在校照片<br>建议竖版，自动裁切</div>
+          <!-- 太原理工大学机械馆 -->
+          <figure class="ph campus-photo reveal" style="--d:.22s">
+            <img src="images/机械馆.jpg" alt="太原理工大学机械馆" style="object-position:50% 42%">
           </figure>
+          <div class="campus-cap">机械馆</div>
         </div>
       </div>
 
